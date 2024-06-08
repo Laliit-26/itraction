@@ -18,6 +18,131 @@
   <link media="print" href="wp-content/cache/autoptimize/css/autoptimize_1bb1ebf790ffd8bb887d8c15c6227cdc.css"
     rel="stylesheet">
   <title>Enterprise Web &amp; Traction Digital Solutions</title>
+
+  <style>
+    @media only screen and (max-width: 900px) {
+     .home_banner .container {
+       width: "100%";
+       display: flex;
+       justify-content: center;
+       position: relative;
+       top: 23rem;
+     }
+     .banner_content h1, .banner_content p {
+       text-align: center;
+     }
+    }
+
+    @media only screen and (max-width: 600px) {
+
+     #home-banner {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       object-fit: cover;
+       
+       background-size: cover;
+       background-position: center; 
+       animation: changeBgMobile 16s infinite; /* Mobile animation */
+     }
+
+    
+
+
+   }
+   @media (min-width: 601px) {
+     #home-banner {
+       animation: changeBgDesktop 16s infinite;
+     }
+   }
+   
+
+   #home-banner {
+     width: 100%;
+     height: 100vh;
+     background-size: cover;
+     background-position: center;
+    
+   }
+   
+   @keyframes changeBgMobile {
+       1%, 25% {
+         background-image: url('wp-content/uploads/2023/07/phone mobile.jpg');
+         opacity: 1;
+       }
+       27%, 28% {
+         opacity: 0.7;
+       }
+       30%, 52% {
+         background-image: url('wp-content/uploads/2023/07/tablet mobile.jpg');
+         opacity: 1;
+       }
+       54%, 55% {
+         opacity: 0.7;
+       }
+       57%, 80% {
+         background-image: url('wp-content/uploads/2023/07/laptop mobile.jpg');
+         opacity: 1;
+       }
+       82%, 83% {
+         opacity: 0.7;
+       }
+       85%, 100% {
+         background-image: url('wp-content/uploads/2023/07/phone mobile.jpg');
+         opacity: 1;
+       }
+     }
+
+
+   @keyframes changeBgDesktop {
+    
+     0%, 10% {
+       background-image: url('wp-content/uploads/2023/07/phone1.jpg');
+       opacity: 1;
+     }
+     11%, 28% {
+       opacity: 0.7;
+     }
+     30%, 56% {
+       background-image: url('wp-content/uploads/2023/07/TABLET1.jpg');
+       opacity: 1;
+     }
+     57%, 58% {
+       opacity: 0.7;
+     }
+     60%, 85% {
+       background-image: url('wp-content/uploads/2023/07/laptop1.jpg');
+       opacity: 1;
+     }
+     92%, 93% {
+       opacity: 0.7;
+     }
+     95%, 100% {
+       background-image: url('wp-content/uploads/2023/07/phone1.jpg');
+       opacity: 1;
+     }
+     
+   }
+   @media (min-width: 1024px) {
+   .banner_content h1 span {
+       font-size: 75px;
+   }
+
+   .banner_content p span{
+       font-size: 25px;
+       width: 50px;
+       text-wrap: wrap;
+   }
+   .banner_content .subHeading{
+     width:50rem
+
+   }
+}
+
+ 
+
+ </style>
+
   <meta name="description"
     content="We are an award-winning web and mobile app development company offering services for Android, iOS, Blockchain, AI, ML and Automation Solutions to Enterprises." />
   <link rel="canonical" href="index.html" />
@@ -70,20 +195,24 @@
     <header class="home_header width100">
       <div class="container">
         <div class="header_wrap">
-          <div class="left_menu"> <a href="index.html"><img alt="logo" style="width: auto;height: 120px;"
-                data-src="https://i.ibb.co/CVrSKJB/Screenshot-from-2023-08-21-15-39-46-removebg-preview.png"
-                class="logo lazyload"
+          <div class="left_menu">
+            <!-- LOGO -->
+            <a href="index.html"><img alt="logo" style="width: auto;height: 120px;"
+                data-src="wp-content/themes/ongraph/assets/images/itraction_logo.png" class="logo lazyload"
                 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img
-                  alt="logo" src="https://i.ibb.co/CVrSKJB/Screenshot-from-2023-08-21-15-39-46-removebg-preview.png"
+                  alt="logo" src="wp-content/themes/ongraph/assets/images/itraction_logo.png"
                   class="logo"></noscript></a>
+
             <div class="header-nav-cls">
               <div class="nav-close-mobile"><a href="javascript:void(0)"></a></div>
               <ul class="header_menu menu_wrap">
+
                 <li><a href="index.html"><img
                       data-src='https://www.ongraph.com/wp-content/themes/ongraph/assets/images/home_icon.png'
                       class='lazyload'
                       src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='><noscript><img
                         src="wp-content/themes/ongraph/assets/images/home_icon.png"></noscript></a></li>
+
                 <li class="cust-mob-menu"><a href="#services">Services
                     <!-- <i id="dropdownMenuButton"
                       class="fa fa-angle-down" data-toggle="dropdown" aria-haspopup="true"
@@ -200,6 +329,7 @@
                     </div>
                   </div> -->
                 </li>
+
                 <li class="cust-mob-menu"><a href="#solutions">Solutions
                     <!-- <i id="dropdownMenuButton"
                       class="fa fa-angle-down" data-toggle="dropdown" aria-haspopup="true"
@@ -313,13 +443,14 @@
       </div>
       <div class="overlay-mobile"></div>
     </header>
-    <section class="home_banner home_banner_section"
+    <section id="home-banner" class="home_banner home_banner_section"
       style="background-image: url(wp-content/uploads/2023/07/OG_HOMEPAGE_banner1.webp.html);">
       <div class="container">
         <div class="banner_content">
-          <div class="left_content banner_slider">
-            <div class="banner_content">
-              <h1><span class="slideDown">Web &amp; Mobile</span><br /> <span class="bcolor slideLeft">App
+          <div class="left_content 37pxbanner_slider">
+            <div class="banner_content animated">
+              <h1 style="font-size: 50px;"><span class="slideDown">Web &amp; Mobile</span><br /> <span
+                  class="bcolor slideLeft">App
                   Development</span></h1>
               <p class="slideRight">Backed with Latest Technology to Deliver Best in Class User Experience.</p>
               <p class="slideRight">
@@ -335,7 +466,7 @@
                 data-src="https://www.ongraph.com/wp-content/uploads/2022/01/developer.svg" class="lazyload"
                 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img
                   src="wp-content/uploads/2022/01/developer.svg" alt=""></noscript></span>
-            <h3>250+</h3>
+            <h3>50+</h3>
             <p>Top Developers</p>
           </div>
         </div>
@@ -344,7 +475,7 @@
                 data-src="https://www.ongraph.com/wp-content/uploads/2022/01/project.svg" class="lazyload"
                 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img
                   src="wp-content/uploads/2022/01/project.svg" alt=""></noscript></span>
-            <h3>500+</h3>
+            <h3>100+</h3>
             <p>Projects Completed</p>
           </div>
         </div>
@@ -353,7 +484,7 @@
                 data-src="https://www.ongraph.com/wp-content/uploads/2022/01/application.svg" class="lazyload"
                 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img
                   src="wp-content/uploads/2022/01/application.svg" alt=""></noscript></span>
-            <h3>114</h3>
+            <h3>50+</h3>
             <p>Applications Delivered</p>
           </div>
         </div>
@@ -371,7 +502,7 @@
                 data-src="https://www.ongraph.com/wp-content/uploads/2022/01/client.svg" class="lazyload"
                 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img
                   src="wp-content/uploads/2022/01/client.svg" alt=""></noscript></span>
-            <h3>218</h3>
+            <h3>100+</h3>
             <p>Enterprise Customers</p>
           </div>
         </div>
@@ -381,7 +512,7 @@
                 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img
                   src="wp-content/uploads/2022/01/rating.svg" alt=""></noscript></span>
             <h3>4.7</h3>
-            <p>Star Rating By 120+ Enterprise Customers</p>
+            <p>Star Rating By 100+ Enterprise Customers</p>
           </div>
         </div>
       </div>
@@ -406,6 +537,7 @@
              <p><span style="font-weight: 400;">Our high-end custom solutions and services will cater to your Web and Mobile App development  and help your business excel. With our skilled in-house solution architects, developers, and testers, everything is possible.</span></p>
             <p><span style="font-weight: 400;">At iTRACTION Technologies, we provide top-notch AI-based solutions to help businesses build powerful applications. We guarantee concrete results with faster developments while emphasizing the customer’s requirements. We have been helping our customers across countries and industries for over 14 years while maintaining our promise to deliver the best solutions to outrank their competitors</span></p>
             <p><span style="font-weight: 400;">We believe in straightforward processes with tested standards</span>
+
             </p>
             <p><span style="font-weight: 400;">So, what stops you from being the best business in the market? </span>
             </p>
@@ -455,6 +587,7 @@
             </div>
           </div>
           <div class="ex_right">
+
             <div class="col1 ex_right_detail1">
               <div class="expert_icon icon_pulse1" data-aos="zoom-in"> <svg version="1.0"
                   xmlns="http://www.w3.org/2000/svg" width="512.000000pt" height="512.000000pt"
@@ -572,10 +705,11 @@
                   </g>
                 </svg></div>
               <div class="ex_text" data-aos="fade-left">
-                <h3>APP DEVELOPMENT</h3>
-                <p>Unlock new opportunities and services with our interactive and innovative app in hand.</p>
+                <h3>APP &amp; WEB DEVELOPMENT</h3>
+                <p>Transform your ideas into reality with our cutting-edge web and app development services.</p>
               </div>
             </div>
+
             <div class="col1 ex_right_detail2">
               <div class="expert_icon icon_pulse2" data-aos="zoom-in"> <svg version="1.0"
                   xmlns="http://www.w3.org/2000/svg" width="512.000000pt" height="512.000000pt"
@@ -722,6 +856,7 @@
                   bots.</p>
               </div>
             </div>
+
             <div class="col1 ex_right_detail3">
               <div class="expert_icon icon_pulse3" data-aos="zoom-in"> <svg version="1.0"
                   xmlns="http://www.w3.org/2000/svg" width="512.000000pt" height="512.000000pt"
@@ -841,6 +976,7 @@
                 <p>With IoT power, automate your crucial workflow and improve your productivity.</p>
               </div>
             </div>
+
             <div class="col1 ex_right_detail4">
               <div class="expert_icon icon_pulse4" data-aos="zoom-in"> <svg version="1.0"
                   xmlns="http://www.w3.org/2000/svg" width="512.000000pt" height="512.000000pt"
@@ -962,10 +1098,11 @@
                   </g>
                 </svg></div>
               <div class="ex_text" data-aos="fade-left">
-                <h3>WEB DEVELOPMENT</h3>
-                <p>Not leaving your desktop customers behind, have your web app ready!</p>
+                <h3>SOFTWARE TESTING</h3>
+                <p>Ensure flawless performance with our new, cutting-edge software testing feature.</p>
               </div>
             </div>
+
             <div class="col1 ex_right_detail5">
               <div class="expert_icon icon_pulse5" data-aos="zoom-in"> <svg version="1.0"
                   xmlns="http://www.w3.org/2000/svg" width="512.000000pt" height="512.000000pt"
@@ -1085,8 +1222,11 @@
                 <p>Grow your network and connect with other companies for more shared resources.</p>
               </div>
             </div>
+
+
           </div>
         </div>
+
         <!-- <div class="o_btn exprt_btn"> <a class="light_blue_btn" 
           href="our-services/index.html"
           >view all services</a>
@@ -1101,7 +1241,7 @@
               src="wp-content/themes/ongraph/assets/images/down_arrow_white.png" alt=""></noscript></a></div>
       <div class="container">
         <div class="technology_content">
-          <h2 data-aos="fade-up">OUR INDUSTRIES</h2>
+          <h2 data-aos="fade-up">OUR SERVICES</h2>
           <p data-aos="fade-up" id="solutions">With the help of our wide range of services in various domains. We have
             successfully
             covered various companies globally. In our time frame, we have designed several apps for different companies
@@ -1493,9 +1633,9 @@
             <p>CEO</p>
           </div>
           <div class="testimonial_text">
-            <p>Ongraph&#8217;s developers delivered good work on my AWS project and I enjoyed working with them. The
+            <p>iTraction&#8217;s developers delivered good work on my AWS project and I enjoyed working with them. The
               communication was top notch and they met all deadlines. The skills of the team are reasonably strong. I
-              will likely have additional jobs for Ongraph in the future.</p>
+              will likely have additional jobs for iTraction in the future.</p>
           </div>
         </div>
         <div class="testimonial_box" data-aos="fade-left">
@@ -1529,7 +1669,7 @@
             <p>ETL & Business Analytics Expert</p>
           </div>
           <div class="testimonial_text">
-            <p>Was always a pleasure to work with OnGraph. Brought great ideas and solutions.</p>
+            <p>Was always a pleasure to work with iTraction. Brought great ideas and solutions.</p>
           </div>
         </div>
         <div class="testimonial_box" data-aos="fade-left">
@@ -1600,7 +1740,7 @@
             <p>CEO- Forebase</p>
           </div>
           <div class="testimonial_text">
-            <p>The developers from OnGraph were of great help. Great attitude, smart and fast. Communication was a bit
+            <p>The developers from iTraction were of great help. Great attitude, smart and fast. Communication was a bit
               difficult because of the strong accent (I guess it&#8217;s just a matter of getting used to it). Overall
               experience was good and very effective. I would definitely recommend it.</p>
           </div>
@@ -1674,7 +1814,7 @@
           </div>
           <div class="testimonial_text">
             <p>The team is really helpful. We got prompt responses every time and our project got delivered on time. No
-              hassles at all. We would recommend Ongraph&#8217;s services.</p>
+              hassles at all. We would recommend iTraction&#8217;s services.</p>
           </div>
         </div>
       </div>
@@ -1818,10 +1958,12 @@
         </div>
       </div>
     </section>
+
+    <!-- CONTACT US SECTION -->
     <section class="n_contact_form">
       <div class="container">
-        <div class="d-flex">
-          <div class="col-md-6">
+        <div class="">
+          <div class="d-flex">
             <div class="ncontactform_left">
               <div class="contact_hdng">
                 <h2>Let’s have a <span class="blue_color">conversation today!</span></h2>
@@ -1871,12 +2013,14 @@
                 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></iframe>
             </div> -->
               </div>
-              <div class="col-md-6 mobile_contact_img">
-                <div class="img-logo"> <img alt=""
-                    data-src="https://www.ongraph.com/wp-content/uploads/2022/12/contact.png" class="lazyload"
-                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img
-                      src="wp-content/uploads/2022/12/contact.png" alt=""></noscript></div>
-              </div>
+
+            </div>
+
+            <div class="col-md-6 mobile_contact_img">
+              <div class="img-logo"> <img alt=""
+                  data-src="https://www.ongraph.com/wp-content/uploads/2022/12/contact.png" class="lazyload"
+                  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img
+                    src="wp-content/uploads/2022/12/contact.png" alt=""></noscript></div>
             </div>
           </div>
     </section>
@@ -2002,6 +2146,7 @@
               </div>
             </div>
             <div class="footer-right-col flxrow" data-aos="fade-left">
+
               <div class="f-col">
                 <h5>Services</h5>
                 <div class="f-links">
@@ -2028,7 +2173,8 @@
                   </ul>
                 </div>
               </div>
-              <div class="f-col">
+
+              <!-- <div class="f-col">
                 <h5>Staffing Services</h5>
                 <div class="f-links">
                   <ul>
@@ -2054,7 +2200,7 @@
                         Developer</a></li>
                   </ul>
                 </div>
-              </div>
+              </div> -->
               <div class="f-col">
                 <h5>Technology</h5>
                 <div class="f-links">
@@ -2073,10 +2219,21 @@
                   </ul>
                 </div>
               </div>
+
+              <div class="f-col">
+                <h5>Company</h5>
+                <div class="f-links">
+                  <ul>
+                    <li><a href="javascript:void(0)" title="About Us" class="   ">About Us</a></li>
+                    <li><a href="javascript:void(0)" title="Careers" class="   ">Careers</a></li>
+                    <li><a href="javascript:void(0)" title="Contact Us" class="   ">Contact Us</a></li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
           <div class="footer-row flxrow">
-            <div class="copyright">© 2023 <span>Traction.</span> All Rights Reserved.</div>
+            <div class="copyright">© 2024 <span>Traction.</span> All Rights Reserved.</div>
             <!-- <div class="f-link-left"> <a href="tech-glossary/index.html">Glossary<span>|</span> </a> <a
                 href="blog/index.html">Blog<span>|</span> </a> <a href="sitemap/index.html">SiteMap<span>|</span> </a>
               <a href="privacy-policy/index.html">Privacy Policy </a>
