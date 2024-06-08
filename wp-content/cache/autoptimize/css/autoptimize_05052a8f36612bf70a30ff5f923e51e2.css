@@ -13238,14 +13238,8 @@ header.sticky {
 
 .ex_right_detail5 {
     position: absolute;
-    top: 474px;
-    left: 90px
-}
-
-.ex_right_detail6 {
-    position: absolute;
     top: 571px;
-    left: -10px
+    left: -25px
 }
 
 .technologies_wrap {
