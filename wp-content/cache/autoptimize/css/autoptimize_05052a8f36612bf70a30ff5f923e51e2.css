@@ -18232,8 +18232,12 @@ html {
     height: 100%;
     content: '';
     background-size: cover;
-    z-index: 5;
-    background: linear-gradient(90deg, rgba(5, 64, 97, 1) 0%, rgb(6 64 98/50%) 60%, rgb(7 65 98/0%) 100%)
+    z-index: 5;  
+}
+
+.home_banner .container {
+    z-index: 15;
+    position: relative;
 }
 
 .Blog_banner:before {

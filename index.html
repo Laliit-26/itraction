@@ -18,6 +18,131 @@
   <link media="print" href="wp-content/cache/autoptimize/css/autoptimize_1bb1ebf790ffd8bb887d8c15c6227cdc.css"
     rel="stylesheet">
   <title>Enterprise Web &amp; Traction Digital Solutions</title>
+
+  <style>
+    @media only screen and (max-width: 900px) {
+     .home_banner .container {
+       width: "100%";
+       display: flex;
+       justify-content: center;
+       position: relative;
+       top: 23rem;
+     }
+     .banner_content h1, .banner_content p {
+       text-align: center;
+     }
+    }
+
+    @media only screen and (max-width: 600px) {
+
+     #home-banner {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       object-fit: cover;
+       
+       background-size: cover;
+       background-position: center; 
+       animation: changeBgMobile 16s infinite; /* Mobile animation */
+     }
+
+    
+
+
+   }
+   @media (min-width: 601px) {
+     #home-banner {
+       animation: changeBgDesktop 16s infinite;
+     }
+   }
+   
+
+   #home-banner {
+     width: 100%;
+     height: 100vh;
+     background-size: cover;
+     background-position: center;
+    
+   }
+   
+   @keyframes changeBgMobile {
+       1%, 25% {
+         background-image: url('wp-content/uploads/2023/07/phone mobile.jpg');
+         opacity: 1;
+       }
+       27%, 28% {
+         opacity: 0.7;
+       }
+       30%, 52% {
+         background-image: url('wp-content/uploads/2023/07/tablet mobile.jpg');
+         opacity: 1;
+       }
+       54%, 55% {
+         opacity: 0.7;
+       }
+       57%, 80% {
+         background-image: url('wp-content/uploads/2023/07/laptop mobile.jpg');
+         opacity: 1;
+       }
+       82%, 83% {
+         opacity: 0.7;
+       }
+       85%, 100% {
+         background-image: url('wp-content/uploads/2023/07/phone mobile.jpg');
+         opacity: 1;
+       }
+     }
+
+
+   @keyframes changeBgDesktop {
+    
+     0%, 10% {
+       background-image: url('wp-content/uploads/2023/07/phone1.jpg');
+       opacity: 1;
+     }
+     11%, 28% {
+       opacity: 0.7;
+     }
+     30%, 56% {
+       background-image: url('wp-content/uploads/2023/07/TABLET1.jpg');
+       opacity: 1;
+     }
+     57%, 58% {
+       opacity: 0.7;
+     }
+     60%, 85% {
+       background-image: url('wp-content/uploads/2023/07/laptop1.jpg');
+       opacity: 1;
+     }
+     92%, 93% {
+       opacity: 0.7;
+     }
+     95%, 100% {
+       background-image: url('wp-content/uploads/2023/07/phone1.jpg');
+       opacity: 1;
+     }
+     
+   }
+   @media (min-width: 1024px) {
+   .banner_content h1 span {
+       font-size: 75px;
+   }
+
+   .banner_content p span{
+       font-size: 25px;
+       width: 50px;
+       text-wrap: wrap;
+   }
+   .banner_content .subHeading{
+     width:50rem
+
+   }
+}
+
+ 
+
+ </style>
+
   <meta name="description"
     content="We are an award-winning web and mobile app development company offering services for Android, iOS, Blockchain, AI, ML and Automation Solutions to Enterprises." />
   <link rel="canonical" href="index.html" />
@@ -318,12 +443,12 @@
       </div>
       <div class="overlay-mobile"></div>
     </header>
-    <section class="home_banner home_banner_section"
+    <section id="home-banner" class="home_banner home_banner_section"
       style="background-image: url(wp-content/uploads/2023/07/OG_HOMEPAGE_banner1.webp.html);">
       <div class="container">
         <div class="banner_content">
           <div class="left_content 37pxbanner_slider">
-            <div class="banner_content">
+            <div class="banner_content animated">
               <h1 style="font-size: 50px;"><span class="slideDown">Web &amp; Mobile</span><br /> <span
                   class="bcolor slideLeft">App
                   Development</span></h1>
